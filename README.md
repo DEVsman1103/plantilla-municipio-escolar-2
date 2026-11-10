@@ -42,7 +42,19 @@ Crea una carpeta `img/` junto a `index.html` y guarda ahí tus fotos.
 index.html    estructura de la página + comentarios EDITA / FOTO
 styles.css    paleta y tipografía (arriba) + componentes
 script.js     menú móvil, acordeón de propuestas y efecto de scroll (no requiere edición)
+datos-plancha.csv  datos de ejemplo del equipo, listos para Google Sheets
 ```
+
+## Datos de ejemplo en CSV
+
+El archivo `datos-plancha.csv` contiene los mismos datos ficticios de la plancha
+que ves en la página (cargos, nombres, grados y fotos previstas).
+
+- Impórtalo en Google Sheets con **Archivo → Importar → Subir** (o desde URL:
+  `https://raw.githubusercontent.com/DEVsman1103/plantilla-municipio-escolar-2/main/datos-plancha.csv`).
+- Llena los valores reales de tu campaña y usa ese tabla guía para editar
+  `index.html` (sección PLANCHA: cargos, nombres y grados).
+- Está en UTF-8 con BOM para que los acentos se vean bien también en Excel.
 
 ## Publicarla en GitHub Pages
 
