@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!--
+  =========================================================
+  PLANTILLA DE CAMPAÑA — MUNICIPIO ESCOLAR
+  Todo el contenido es de EJEMPLO. Para personalizar:
+  1. Colores y fuentes: edita las variables al inicio de styles.css
+  2. Textos: busca los comentarios "EDITA" en este archivo
+  3. Fotos: reemplaza cada <svg> marcado como "FOTO" por
+     <img src="img/tu-foto.jpg" alt="Descripción de la foto">
+  Funciona sin internet: abre index.html en cualquier navegador.
+  =========================================================
+-->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDITA: título y descripción que aparecen al compartir el enlace -->
+  <title>Lista 3 · Camila Torres para Alcaldesa Escolar</title>
+  <meta name="description" content="Conoce a Camila Torres, su plancha y sus propuestas para el municipio escolar. Vota Lista 3.">
+  <meta name="theme-color" content="#0e5a3c">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- Borra este aviso cuando reemplaces el contenido de ejemplo -->
+  <p class="aviso"><strong>Plantilla:</strong> nombres, fotos y propuestas son de ejemplo y deben reemplazarse.</p>
+
+  <!-- Siluetas ilustrativas reutilizables (reemplázalas por fotos reales) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="silueta" viewBox="0 0 200 200">
+        <circle cx="100" cy="78" r="38"/>
+        <path d="M28 200c0-46 32-74 72-74s72 28 72 74z"/>
+      </symbol>
+      <pattern id="rayas" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <rect width="14" height="14" fill="#0e5a3c"/>
+        <rect width="7" height="14" fill="#0c4f35"/>
+      </pattern>
+      <pattern id="rayas-sol" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+        <rect width="14" height="14" fill="#f3b61f"/>
+        <rect width="7" height="14" fill="#e8ab12"/>
+      </pattern>
+      <symbol id="camara" viewBox="0 0 48 48">
+        <path d="M6 15h9l3-5h12l3 5h9v23H6z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+        <circle cx="24" cy="26" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <!-- EDITA: número de lista y nombre -->
+      <a class="marca" href="#inicio" aria-label="Lista 3, inicio">
+        <span class="marca__numero" aria-hidden="true">3</span>
+        <span class="marca__texto">Lista 3<small>Municipio Escolar</small></span>
+      </a>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="menu-boton__icono" aria-hidden="true"></span> Menú
+      </button>
+      <nav class="nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="#propuestas">Propuestas</a></li>
+          <li><a href="#plancha">Plancha</a></li>
+          <li><a href="#galeria">Actividades</a></li>
+          <li><a class="nav__votar" href="#votar">Cómo votar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ================= HÉROE ================= -->
+    <section class="heroe" id="inicio" aria-labelledby="eslogan">
+      <div class="contenedor heroe__grid">
+        <div class="revelar">
+          <!-- EDITA: cargo, eslogan, nombre y presentación -->
+          <p class="etiqueta heroe__cargo">Candidata a Alcaldesa Escolar</p>
+          <h1 id="eslogan">Un colegio que <em>se escucha</em>.</h1>
+          <p class="heroe__nombre"><strong>Camila Torres</strong>4.º de secundaria · Sección B</p>
+          <p class="heroe__texto">Queremos un municipio escolar que pregunte antes de decidir, que rinda cuentas cada mes y que convierta las ideas de los estudiantes en actividades reales.</p>
+          <div class="acciones">
+            <a class="boton boton--primario" href="#propuestas">Ver propuestas</a>
+            <a class="boton boton--secundario" href="#plancha">Conoce la plancha</a>
+          </div>
+        </div>
+
+        <div class="heroe__visual revelar">
+          <!-- FOTO: reemplaza este svg por <img src="img/candidata.jpg" alt="Camila Torres sonriendo en el patio del colegio"> -->
+          <div class="retrato">
+            <svg viewBox="0 0 400 500" role="img" aria-label="Ilustración de ejemplo: retrato de la candidata">
+              <rect width="400" height="500" fill="url(#rayas)"/>
+              <circle cx="200" cy="170" r="120" fill="#f3b61f"/>
+              <use href="#silueta" x="40" y="140" width="320" height="360" fill="#f6f1e6"/>
+            </svg>
+          </div>
+          <span class="sintetico">Ilustración de ejemplo</span>
+          <div class="cedula" aria-hidden="true">
+            <span class="cedula__casilla">3</span>
+            <span class="cedula__texto">Marca aquí<span>Lista 3</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Franja de ejes (EDITA las palabras; el texto se repite para el efecto continuo) -->
+    <div class="franja" aria-hidden="true">
+      <div class="franja__pista">
+        <span>Deportes</span><span>Cultura</span><span>Ambiente</span><span>Bienestar</span><span>Participación</span>
+        <span>Deportes</span><span>Cultura</span><span>Ambiente</span><span>Bienestar</span><span>Participación</span>
+      </div>
+    </div>
+
+    <!-- ================= PROPUESTAS ================= -->
+    <section class="seccion" id="propuestas" aria-labelledby="titulo-propuestas">
+      <div class="contenedor">
+        <div class="seccion__cabeza revelar">
+          <p class="etiqueta seccion__num">01 · Propuestas</p>
+          <h2 id="titulo-propuestas">Lo que vamos a hacer</h2>
+          <p>Cinco áreas, acciones concretas. Toca cada una para ver el detalle y cómo la haremos posible.</p>
+        </div>
+
+        <!-- EDITA: cada <li class="propuesta"> es una propuesta. Copia uno para agregar más
+             (cambia los id "p1", "p2"... para que no se repitan). -->
+        <ul class="propuestas revelar">
+          <li class="propuesta">
+            <h3>
+              <button class="propuesta__boton" type="button" aria-expanded="true" aria-controls="p1">
+                <span class="propuesta__indice" aria-hidden="true">01</span>
+                <span class="propuesta__titulo">Deportes para todos<small>Regiduría de Educación, Cultura y Deporte</small></span>
+                <span class="propuesta__signo" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="propuesta__panel" id="p1" data-abierto="true">
+              <div>
+                <div class="propuesta__contenido">
+                  <ul>
+                    <li>Campeonato interaulas mixto de fútbol, vóley y básquet cada bimestre.</li>
+                    <li>Préstamo de balones y redes en el recreo con registro en la biblioteca.</li>
+                    <li>Una disciplina nueva al año elegida por votación (ajedrez, atletismo, danza).</li>
+                  </ul>
+                  <p class="propuesta__como"><strong>Cómo:</strong> coordinando horarios con el área de Educación Física y pidiendo apoyo a la APAFA.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="propuesta">
+            <h3>
+              <button class="propuesta__boton" type="button" aria-expanded="false" aria-controls="p2">
+                <span class="propuesta__indice" aria-hidden="true">02</span>
+                <span class="propuesta__titulo">Cultura en el patio<small>Regiduría de Educación, Cultura y Deporte</small></span>
+                <span class="propuesta__signo" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="propuesta__panel" id="p2" data-abierto="false">
+              <div>
+                <div class="propuesta__contenido">
+                  <ul>
+                    <li>Viernes culturales: música, teatro y lectura en vivo durante el recreo.</li>
+                    <li>Mural colectivo diseñado por estudiantes de todos los grados.</li>
+                    <li>Feria de talentos con inscripción abierta a cualquier sección.</li>
+                  </ul>
+                  <p class="propuesta__como"><strong>Cómo:</strong> con los talleres de Arte y los clubes existentes, sin costo para los estudiantes.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="propuesta">
+            <h3>
+              <button class="propuesta__boton" type="button" aria-expanded="false" aria-controls="p3">
+                <span class="propuesta__indice" aria-hidden="true">03</span>
+                <span class="propuesta__titulo">Colegio verde<small>Regiduría de Salud y Ambiente</small></span>
+                <span class="propuesta__signo" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="propuesta__panel" id="p3" data-abierto="false">
+              <div>
+                <div class="propuesta__contenido">
+                  <ul>
+                    <li>Puntos de reciclaje por pabellón con brigadas rotativas por aula.</li>
+                    <li>Biohuerto escolar cuidado por cada grado durante un mes.</li>
+                    <li>Campaña para traer tomatodo y reducir botellas descartables.</li>
+                  </ul>
+                  <p class="propuesta__como"><strong>Cómo:</strong> trabajando con el comité ambiental del colegio y docentes de Ciencia y Tecnología.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="propuesta">
+            <h3>
+              <button class="propuesta__boton" type="button" aria-expanded="false" aria-controls="p4">
+                <span class="propuesta__indice" aria-hidden="true">04</span>
+                <span class="propuesta__titulo">Bienestar y convivencia<small>Regiduría de Derechos del Niño y Adolescente</small></span>
+                <span class="propuesta__signo" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="propuesta__panel" id="p4" data-abierto="false">
+              <div>
+                <div class="propuesta__contenido">
+                  <ul>
+                    <li>Buzón anónimo para reportar casos de acoso o problemas de convivencia.</li>
+                    <li>Charlas mensuales sobre salud mental con el departamento de psicología.</li>
+                    <li>Programa de padrinos: estudiantes mayores acompañan a los de primer año.</li>
+                  </ul>
+                  <p class="propuesta__como"><strong>Cómo:</strong> en coordinación con tutoría y psicología, respetando la confidencialidad.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="propuesta">
+            <h3>
+              <button class="propuesta__boton" type="button" aria-expanded="false" aria-controls="p5">
+                <span class="propuesta__indice" aria-hidden="true">05</span>
+                <span class="propuesta__titulo">Tu voz cuenta<small>Regiduría de Comunicación y Tecnologías</small></span>
+                <span class="propuesta__signo" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="propuesta__panel" id="p5" data-abierto="false">
+              <div>
+                <div class="propuesta__contenido">
+                  <ul>
+                    <li>Asamblea abierta con delegados de aula una vez al mes.</li>
+                    <li>Rendición de cuentas mensual en el periódico mural y redes del colegio.</li>
+                    <li>Encuesta por bimestre para decidir las siguientes actividades.</li>
+                  </ul>
+                  <p class="propuesta__como"><strong>Cómo:</strong> publicando cada acuerdo y avance para que todos puedan revisarlo.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= PLANCHA ================= -->
+    <section class="seccion seccion--oscura" id="plancha" aria-labelledby="titulo-plancha">
+      <div class="contenedor">
+        <div class="seccion__cabeza revelar">
+          <p class="etiqueta seccion__num">02 · Plancha</p>
+          <h2 id="titulo-plancha">El equipo de la Lista 3</h2>
+          <p>Estudiantes de distintos grados, cada uno a cargo de un área. Así sabrás a quién buscar.</p>
+        </div>
+
+        <!-- EDITA: nombres, cargos y grados. FOTO: reemplaza cada svg por <img src="img/nombre.jpg" alt="Nombre"> -->
+        <ul class="plancha">
+          <li class="miembro miembro--destacado revelar">
+            <div class="miembro__foto">
+              <svg viewBox="0 0 200 200" aria-hidden="true"><rect width="200" height="200" fill="url(#rayas-sol)"/><use href="#silueta" fill="#17201b"/></svg>
+            </div>
+            <div class="miembro__info">
+              <span class="miembro__cargo">Alcaldesa</span>
+              <span class="miembro__nombre">Camila Torres</span>
+              <span class="miembro__grado">4.º de secundaria</span>
+            </div>
+          </li>
+          <li class="miembro revelar">
+            <div class="miembro__foto"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#silueta" fill="#17201b"/></svg></div>
+            <div class="miembro__info">
+              <span class="miembro__cargo">Teniente alcalde</span>
+              <span class="miembro__nombre">Diego Quispe</span>
+              <span class="miembro__grado">3.º de secundaria</span>
+            </div>
+          </li>
+          <li class="miembro revelar">
+            <div class="miembro__foto"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#silueta" fill="#17201b"/></svg></div>
+            <div class="miembro__info">
+              <span class="miembro__cargo">Educación, Cultura y Deporte</span>
+              <span class="miembro__nombre">Lucía Mendoza</span>
+              <span class="miembro__grado">2.º de secundaria</span>
+            </div>
+          </li>
+          <li class="miembro revelar">
+            <div class="miembro__foto"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#silueta" fill="#17201b"/></svg></div>
+            <div class="miembro__info">
+              <span class="miembro__cargo">Salud y Ambiente</span>
+              <span class="miembro__nombre">Mateo Huamán</span>
+              <span class="miembro__grado">4.º de secundaria</span>
+            </div>
+          </li>
+          <li class="miembro revelar">
+            <div class="miembro__foto"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#silueta" fill="#17201b"/></svg></div>
+            <div class="miembro__info">
+              <span class="miembro__cargo">Derechos del Niño y Adolescente</span>
+              <span class="miembro__nombre">Valeria Ramos</span>
+              <span class="miembro__grado">1.º de secundaria</span>
+            </div>
+          </li>
+          <li class="miembro revelar">
+            <div class="miembro__foto"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#silueta" fill="#17201b"/></svg></div>
+            <div class="miembro__info">
+              <span class="miembro__cargo">Comunicación y Tecnologías</span>
+              <span class="miembro__nombre">Andrés Salazar</span>
+              <span class="miembro__grado">5.º de secundaria</span>
+            </div>
+          </li>
+          <li class="miembro revelar">
+            <div class="miembro__foto"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#silueta" fill="#17201b"/></svg></div>
+            <div class="miembro__info">
+              <span class="miembro__cargo">Emprendimiento</span>
+              <span class="miembro__nombre">Sofía Chávez</span>
+              <span class="miembro__grado">3.º de secundaria</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= GALERÍA ================= -->
+    <section class="seccion" id="galeria" aria-labelledby="titulo-galeria">
+      <div class="contenedor">
+        <div class="seccion__cabeza revelar">
+          <p class="etiqueta seccion__num">03 · Actividades</p>
+          <h2 id="titulo-galeria">Ya estamos trabajando</h2>
+          <p>Espacios para fotos de lo que la plancha ha hecho durante la campaña. Reemplázalos por tus propias fotos.</p>
+        </div>
+
+        <!-- FOTO: reemplaza cada svg por <img src="img/actividad.jpg" alt="Qué se ve en la foto"> y edita el pie -->
+        <ul class="galeria revelar">
+          <li class="foto foto--ancha">
+            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="200" fill="url(#rayas)"/><use href="#camara" x="176" y="56" width="48" height="48" color="#f6f1e6"/></svg>
+            <figcaption>Foto de ejemplo · Visita a las aulas de primer año</figcaption>
+          </li>
+          <li class="foto foto--alta">
+            <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="200" height="200" fill="url(#rayas-sol)"/><use href="#camara" x="76" y="62" width="48" height="48" color="#17201b"/></svg>
+            <figcaption>Foto de ejemplo · Jornada de limpieza</figcaption>
+          </li>
+          <li class="foto">
+            <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="200" height="200" fill="#17201b"/><use href="#camara" x="76" y="62" width="48" height="48" color="#f3b61f"/></svg>
+            <figcaption>Foto de ejemplo · Reunión de la plancha</figcaption>
+          </li>
+          <li class="foto">
+            <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="200" height="200" fill="url(#rayas)"/><use href="#camara" x="76" y="62" width="48" height="48" color="#f6f1e6"/></svg>
+            <figcaption>Foto de ejemplo · Encuesta en el recreo</figcaption>
+          </li>
+          <li class="foto foto--ancha">
+            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="200" fill="url(#rayas-sol)"/><use href="#camara" x="176" y="56" width="48" height="48" color="#17201b"/></svg>
+            <figcaption>Foto de ejemplo · Partido amistoso interaulas</figcaption>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CÓMO VOTAR ================= -->
+    <section class="votar" id="votar" aria-labelledby="titulo-votar">
+      <div class="contenedor votar__grid revelar">
+        <p class="etiqueta">El día de la elección</p>
+        <h2 id="titulo-votar">Recuerda el número</h2>
+        <p class="votar__numero" aria-label="Lista número 3">3</p>
+        <ol class="votar__pasos">
+          <li><b>1</b> Lleva tu carné o DNI escolar a la mesa de votación.</li>
+          <li><b>2</b> Busca el símbolo y el número 3 en la cédula.</li>
+          <li><b>3</b> Marca una cruz o un aspa dentro del recuadro.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__grid">
+      <!-- EDITA: nombre del colegio y redes -->
+      <p><strong>Lista 3 · Camila Torres</strong> — Elecciones del Municipio Escolar <span id="anio">2026</span>, I.E. Nombre del Colegio.</p>
+      <p>Página hecha por estudiantes con una plantilla editable. Retratos y fotos son ilustraciones de ejemplo. <a href="#inicio">Volver arriba</a></p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
